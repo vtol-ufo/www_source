@@ -1,0 +1,10 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "chrome": "60"
+      }
+    }], "stage-0", "react"
+  ],
+  "plugins": ["transform-proto-to-assign"]
+}
