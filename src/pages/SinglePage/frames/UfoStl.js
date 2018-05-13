@@ -17,7 +17,7 @@ class UfoStl extends Frame {
 				<div style={{"display": "flex", "justify-content":"center"}}>
 				<STLViewer
 					url={UFO}					
-					height={1000}
+					heigth={1000}
 					width={1000}
 					modelColor='#C7E6FF'
 					backgroundColor='white'
