@@ -12,6 +12,7 @@ class InShort extends Frame {
 		return  <div>
 				<h3>VTOL - In Short</h3>
 				<div>VTOL- vertical takeoff and landing scheme that would be up to 30% more accurate than the current drones in assistance of takeoff and landing.</div>
+				<div style={{"font-weight":"bold"}}>Find more on http://vtol-ufo.github.io/ </div>
 			</div>;
 
 	}

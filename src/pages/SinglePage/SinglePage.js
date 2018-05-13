@@ -8,11 +8,11 @@ import InShort from './frames/InShort.js';
 import UfoStl from './frames/UfoStl.js'; 
 import WingStl from './frames/WingStl.js'; 
 import Thanks from './frames/Thanks.js';
+import Future from './frames/Future.js';
 import UseCases from './frames/UseCases.js';
 import Details from './frames/Details.js';
 import Graph from './frames/Graph.js';
 import WorkProgress from './frames/WorkProgress/WorkProgress.js';
-import BottomLinks from './frames/BottomLinks.js';
 
 class SinglePage extends FlatPage {
         constructor(props) {
@@ -22,14 +22,15 @@ class SinglePage extends FlatPage {
 		let t = this;
 		return <div>    
 				<div id="nameFrame"><InShort/></div>
-				<div id="lfFrame"><UfoStl/></div>
-				<div id="moreFrame"><Details/></div>
-				<div id="useFrame"><UseCases/></div>
 				<div id="protoFrame"><WingStl/></div>
+				<div id="moreFrame"><Details/></div>
+				<div id="lfFrame"><UfoStl/></div>				
+				<div id="useFrame"><UseCases/></div>				
 				<div id="graphFrame"><Graph/></div>
+				<div id="thankYouFrame"><Future/></div>
 				<div id="thankYouFrame"><Thanks/></div>
 				<div id="workPhotoFrame"><WorkProgress/></div>
-				<div><BottomLinks/></div>
+				<div style={{"font-weight":"bold"}}>See you on http://vtol-ufo.github.io/ </div>
 			</div>;
 	}
 	renderPageNavigation() {

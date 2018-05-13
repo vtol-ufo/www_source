@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Frame from 'templates/FlatPage/organisms/Frame.js';
 import UseCaseImage from './UseCases.svgjs';
+import CityInSky from './CityInSky.jpg';
 
 class UseCases extends Frame {
         constructor(props) {
@@ -11,7 +12,10 @@ class UseCases extends Frame {
    	renderContent() {
 	        let t = this;		
 		return  <div>
-				<UseCaseImage width="800" height="600"/>
+				<UseCaseImage width="1000"/>
+				<div>
+					<img src={CityInSky} width={1000} />
+				</div>
 			</div>;
 
 	}

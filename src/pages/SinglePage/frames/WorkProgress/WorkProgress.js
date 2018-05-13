@@ -8,30 +8,21 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
-//Use only 5 otherwise it will too big file
+
 import i01 from "./01.jpg";
-import i02 from "./19.jpg";
-import i03 from "./06.jpg";
-import i04 from "./10.jpg";
-import i05 from "./17.jpg";
-import i06 from "./29.jpg";
+import i02 from "./02.jpg";
+import i03 from "./03.jpg";
+import i04 from "./04.jpg";
 
 let im = [];
-/* not work because vars not exported
-for(var i=0;i<6;i++) {
-  im[i] = eval("i"+(i+1));
-}
-*/
 
 im[0] = i01;
 im[1] = i02;
 im[2] = i03;
 im[3] = i04;
-im[4] = i05;
-im[5] = i06;
 
 let items = [];
-for(var i=0; i<im.length; i++) {
+for(var i=0; i<4; i++) {
 //  let num = "0000"+i;
 //  num = num.substring(num.length()-2);
 //  import im[i] from ""+num+".jpg";
@@ -101,7 +92,7 @@ class WorkProgress extends Frame {
         activeIndex={activeIndex}
         next={this.next}
         previous={this.previous}
-        height={600}
+        height={400}
       >
         <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
         {slides}

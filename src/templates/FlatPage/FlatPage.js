@@ -25,9 +25,9 @@ class FlatPage extends Component {
 		return <div style={{"width":"100%"}}> 				
 				<div className="container-fluid">
 					<div className="row">
-						<nav className="col-sm-2 navbar navbar-light bg-light" id="crollspy" style={{position:"static"}}>{t.renderLeftCol()}</nav>
-						<div className="col-sm-8">{t.renderFrames()}</div>
-						<nav className="col-sm-2 navbar navbar-light bg-light" id="crollspy" style={{position:"static"}}>{t.renderPageNavigation()}</nav>
+						<div className="col-sm-1"></div>
+						<div className="col-sm-10">{t.renderFrames()}</div>
+						<div className="col-sm-1"></div>
 					</div> 
 				</div>
 			</div>;
