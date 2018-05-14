@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import FlatPage from 'templates/FlatPage/FlatPage.js';
+import ImageSeries from 'components/organisms/ImageSeries/ImageSeries.js';
 
 import { Nav, NavItem, NavLink } from 'reactstrap';
 
@@ -13,6 +14,9 @@ import Details from './frames/Details.js';
 import Graph from './frames/Graph.js';
 import WorkProgress from './frames/WorkProgress/WorkProgress.js';
 import BottomLinks from './frames/BottomLinks.js';
+
+
+import './SinglePage.scss';
 
 class SinglePage extends FlatPage {
         constructor(props) {
@@ -33,7 +37,7 @@ class SinglePage extends FlatPage {
 			</div>;
 	}
 	renderPageNavigation() {
-		return <Nav vertical pills stacked className="navbar-fixed-top">
+		return <Nav vertical pills stacked className="SinglePage__nav">
 				<NavItem><NavLink href="#nameFrame">In Short</NavLink></NavItem>
 				<NavItem><NavLink href="#lfFrame">Look & Feel</NavLink></NavItem>
 				<NavItem><NavLink href="#moreFrame">More Details</NavLink></NavItem>
@@ -41,7 +45,8 @@ class SinglePage extends FlatPage {
 				<NavItem><NavLink href="#protoFrame">Prototype</NavLink></NavItem>
 				<NavItem><NavLink href="#thankYouFrame">Thank You</NavLink></NavItem>
 				<NavItem><NavLink href="#workPhotoFrame">Work In Progress</NavLink></NavItem>
-			</Nav>
+			</Nav>;
+/*
 		return <nav className="nav nav-pills flex-column nav-stacked ">
 			<a className="nav-link" href="#nameFrame">In Short</a>
 			<a className="nav-link" href="#lfFrame">Look & Feel</a>
@@ -51,6 +56,13 @@ class SinglePage extends FlatPage {
 			<a className="nav-link" href="#thankYouFrame">Thank You</a>
 			<a className="nav-link" href="#workPhotoFrame">Work In Progress</a>
 		</nav>;
+*/
+	}
+
+	renderLeftCol() {
+		return <div style={{"position":"relative", "top":"150"}}>
+		 	<ImageSeries/>
+		       </div>;
 	}
 
 }

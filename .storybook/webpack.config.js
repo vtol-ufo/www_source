@@ -12,7 +12,7 @@ module.exports = (baseConfig, env) => {
   // Extend it as you need.
 
   // For example, add typescript loader:
-  config.module.rules = config.module.rules.concat(rls);
+  config.module.rules = rls.concat(config.module.rules);
   console.log(config.module.rules);
   config.resolve.extensions = config.resolve.extensions.concat(extns);
   config.resolve.modules.push(

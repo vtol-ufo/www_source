@@ -13,6 +13,7 @@ const rules = [
       ,{ test: /\.(js|jsx)$/, use: 'babel-loader'}
       ,{ test: /\.(svgjs)$/, use: 'react-svg-loader'}
       ,{ test: /\.(svg)$/, use: 'url-loader'}
+      ,{ test: /\.(ljpg|lgif)$/, use: 'url-loader'}
       ,{ test: /\.(stl|jpg|gif)$/, use: 'url-loader'}
       ,{ test: /\.(png|woff|woff2|eot|ttf|xhtml)$/, use: 'url-loader?limit=100000' }
 ];
