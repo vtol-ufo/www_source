@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Frame from 'templates/FlatPage/organisms/Frame.js';
-import LinearDependency from './LinearDependency.jpg'
-
+import LinearDependency from './LinearDependency.ljpg';
+import TestStand from './TestStand.ljpg';
 
 class Graph extends Frame {
         constructor(props) {
@@ -14,7 +14,8 @@ class Graph extends Frame {
 		return  <div>
 				<h3>Measurements</h3>
 				<div style={{"display": "flex", "justify-content":"center"}}>
-				  <img src={LinearDependency}/>
+				  <img src={TestStand} width="400"/>
+				  <img src={LinearDependency} width="400"/>
 				</div>
 			</div>;
 	}

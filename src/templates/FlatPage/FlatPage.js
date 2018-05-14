@@ -15,19 +15,19 @@ class FlatPage extends Component {
 		return <div id="section1">Frames</div>;
 	}
 	renderPageNavigation() {
-		return <ul className="nav nav-pills nav-stacked"><li><a href="#section1">Check & See</a></li></ul>;
+		return <nav className="col-sm-2 navbar navbar-light bg-light" id="crollspy" style={{position:"static"}}><ul className="nav nav-pills nav-stacked"><li><a href="#section1">Check & See</a></li></ul></nav>;
 	}
 	renderLeftCol() {
-		return <ul className="nav nav-pills nav-stacked"><li><a href="#section1">Check & See</a></li></ul>;
+		return <nav className="col-sm-2 navbar navbar-light bg-light" id="crollspy" style={{position:"static"}}><ul className="nav nav-pills nav-stacked"><li><a href="#section1">Check & See</a></li></ul></nav>;
 	}
 	render() {
 		let t=this;
 		return <div style={{"width":"100%"}}> 				
 				<div className="container-fluid">
 					<div className="row">
-						<nav className="col-sm-2 navbar navbar-light bg-light" id="crollspy" style={{position:"static"}}>{t.renderLeftCol()}</nav>
+						{t.renderLeftCol()}
 						<div className="col-sm-8">{t.renderFrames()}</div>
-						<nav className="col-sm-2 navbar navbar-light bg-light" id="crollspy" style={{position:"static"}}>{t.renderPageNavigation()}</nav>
+						{t.renderPageNavigation()}
 					</div> 
 				</div>
 			</div>;
